@@ -2,9 +2,10 @@
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-rd: #ec3000;
+  --color-accent: #FF3400;
   --color-headings-and-btn-hover: #1b0760;
   --color-body-text: #5c5577;
+  --color-icons-container-bg: #f3f9fa;
 }
 /* Tyoography */
 html {
@@ -61,7 +62,7 @@ a {
   font-weight: 400;
 }
 .arrow-link {
-  color: var(--color-rd);
+  color: var(--color-accent);
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -145,5 +146,82 @@ padding-left: 1rem;
 @media screen and (min-width: 1024px) {
   .list--inline .list__item {
     padding-left: 0.5rem;
+  }
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon--secondary {
+  fill: var(--color-secondary);
+}
+.icon-contaner{
+  padding: 1rem;
+  border-radius: 100%;
+  background-color: var(--color-icons-container-bg);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; 
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 50px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+}
+.white-btn{
+background-color: #fff;
+color: var(--color-headings-and-btn-hover);
+}
+
+.btn--white:hover{
+    background-color: var(--color-headings-and-btn-hover);
+    color: #fff;
+}
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #000;
+}
+.btn--accent:hover{
+    background-color: #ec3000;
+    color:#000;
+}
+.btn--primary{
+    background-color:var(--color-primary);
+    color: #fff;
+}
+.btn--primary:hover{
+    background-color:#3A8FFD;
+}
+.btn--secondary{
+    background-color:var(--color-secondary);
+    color: #fff;
+}
+.btn--secondary:hover{
+    background-color:#00C8EB;
+}
+.btn--streached {
+    padding:2rem 6rem;
+}
+.btn--box{
+    width:100% ;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
   }
 }
