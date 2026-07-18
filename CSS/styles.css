@@ -349,7 +349,15 @@ a {
 .card__btn{
   margin-top: 0;
 }
-
+.card__img{
+  width:95%;
+  display: flex;
+  justify-content: center;
+  position:relative;
+  left:1%;
+  padding: 5%;
+  
+}
 
 @media screen and (min-width:1024px){
   .cards-contaner{
@@ -382,7 +390,7 @@ a {
   .card--praimary:hover{
     transform: scale(105%);
   }
-
+  .card__img{}
 }
 
 /* ---media--- */
@@ -418,7 +426,9 @@ a {
 }
 
 /* ---Quotes--- */
-.quotes{}
+.quotes{
+  margin: 5% 0;
+}
 .qoute__paragraph{
   font-size: 2.2rem;
   color:#5c5577;
@@ -451,12 +461,24 @@ a {
   font-weight: 400;
   font-size: 1.6rem;
 }
+
+/* ---Grids--- */
 .grid{
   display:grid;
+  width: 100%;
 }
 
 @media screen and (min-width:768px){
   .grid--1x2{
+    width: 100%;
     grid-template-columns: 1fr 1fr;
   }
+  .grid__column{
+    width: 50%;
+  }
+  .quote--card{
+    width: 90%;
+    margin-left: 5%;
+  }
+  
 }
