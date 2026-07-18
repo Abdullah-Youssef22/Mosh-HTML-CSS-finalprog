@@ -7,6 +7,7 @@
   --color-body-text: #5c5577;
   --color-icons-container-bg: #f3f9fa;
   --color-borders:#ccc;
+  --color-grayText:#b9c3cf;
   --border-radius:30px;
 }
 
@@ -382,4 +383,36 @@ a {
     transform: scale(105%);
   }
 
+}
+
+/* ---media--- */
+.media{
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  padding: 0 5px;
+}
+.media__img{
+  width: 40px;
+  height: 40px ;
+  box-sizing: border-box;
+  fill: white;
+  background-color:var(--color-primary);
+  padding: 0;
+
+}
+.media__img-contaner{
+  margin: 15px 0 0 15px;
+  padding: 5px;
+}
+.media__text-contaner{
+  margin: 0;
+  padding: 0 5px;
+}
+.media__heading{
+  color:white;
+  margin: 0;
+}
+.media__paragraph{
+  color:var(--color-grayText);
 }
