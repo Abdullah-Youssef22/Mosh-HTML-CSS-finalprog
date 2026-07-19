@@ -25,6 +25,7 @@ body {
   color: var(--color-body-text);
   font-size: 2.4rem;
   line-height: 1.5;
+  margin:0;
 }
 h1,
 h2,
@@ -498,4 +499,67 @@ a {
     width: 90%;
     margin-left: 5%;
   }
+}
+
+
+/* ---Callouts--- */
+
+.callout{
+  margin:0;
+  padding:10px 15px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.callout > div{
+  padding:10px;
+}/*
+.callout > a{
+  margin-top: 0;
+  padding:15px 35px;
+  font-size: 1.8rem;
+  align-self: center;
+}*/
+.callout--primary{
+ background-color: var(--color-primary);
+ color:white;
+}
+.callout__text{
+  text-align: center;
+  padding-bottom: 0;
+}
+.callout__text >h2{
+  color:white;
+  margin:0;
+  font-size: 3rem;
+}
+.callout__text >p{
+  color:white;
+  margin-top:5px;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout{
+    flex-direction: row;
+  }
+  .callout__text{
+    text-align: left;
+  }
+  /*.callout > a{
+  margin-top: 0;
+  padding:20px 45px;
+  font-size: 1.8rem;
+  align-self: center;
+}*/
+
+}
+
+@media screen and (min-width: 1155px) {
+  .callout{
+    width: 1155px;
+    justify-self: center;
+  }
+  
 }
