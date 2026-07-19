@@ -620,3 +620,49 @@ a {
     display: none;
   }
 }
+
+/* ---Blocks--- */
+
+.contaner{
+  max-width: 1140px ;
+  margin:0 auto;
+  align-self: center;
+}
+
+.block{
+  --padding-vertical:6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+.block--dark{
+  background-color: #000;
+  color:var(--color-grayText)
+}
+.block--dark .block__header{
+  color:white
+}
+.block--skewed-right{
+  padding-bottom: calc((10/6)*var(--padding-vertical));
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+}
+.block--skewed-left{
+  padding-bottom: calc((10/6)*var(--padding-vertical));
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .block--skewed-right{
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+  }
+  .block--skewed-left{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block--skewed-right{
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 88%);
+  }
+  .block--skewed-left{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 100%);
+  }
+}
