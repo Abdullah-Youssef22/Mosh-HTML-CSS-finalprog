@@ -1,0 +1,12 @@
+<section class="hero block block--dark block--skewed-left">
+  <div class="hero__content contaner grid grid--1x2">
+    <div class="grid__column hero__text-section">
+      <h1 class="block__head">Cloud Hosting for Pros</h1>
+      <p>Deploy your websites in less than 60 seconds</p>
+      <button class="btn btn--accent btn--streached">GET STARTED</button>
+    </div>
+    <div class="grid__column card__img-contaner">
+      <img class="card__img" src="images/banner.png" alt="" />
+    </div>
+  </div>
+</section>
