@@ -182,6 +182,11 @@ a {
   padding: 1rem;
 }
 
+.search-icon{
+   width: 2rem;
+  height: 2rem;
+  margin-right: 5px;
+}
 /* ---Buttons--- */
 .btn {
   border: 0.5px;
@@ -629,6 +634,10 @@ a {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
 }
+.block__centerd-item{
+  align-items: center;
+  text-align: center;
+}
 .block--dark {
   background-color: #000;
   color: var(--color-grayText);
@@ -740,4 +749,49 @@ a {
   align-items:start;
   text-align:start;
   }
+}
+
+/* ---Domain--- */
+.domain{
+  width: 100%;
+}
+.domain > *{
+  margin:30px 10px;
+}
+
+.domain__prices{
+  display:grid;
+  grid-template-columns: repeat(3, 12rem );
+  grid-template-rows: repeat(2, 1 )fr;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  justify-items: center;
+  align-items: center;
+  gap:15%;
+}
+.domain__list__item{
+  font-size: 2rem;
+  font-weight: 600;
+  justify-self: center;
+  align-self: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .domain__prices{
+  grid-template-columns: repeat(1 1fr );
+  grid-template-columns: repeat(6, 12rem );
+  gap:1vw;
+  
+}
+}
+
+@media screen and (min-width: 1000px) {
+  .domain__prices{
+  grid-template-columns: repeat(1 1fr );
+  grid-template-columns: repeat(6, 13rem );
+  gap:2vw;
+ 
+}
 }
