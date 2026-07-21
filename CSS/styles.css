@@ -172,6 +172,9 @@ a {
 .icon--secondary {
   fill: var(--color-secondary);
 }
+.icon--hidable{
+  display: block;
+}
 .icon-contaner {
   align-items: center;
   background-color: var(--color-icons-container-bg);
@@ -187,6 +190,12 @@ a {
   height: 2rem;
   margin-right: 5px;
 }
+@media screen and (min-width: 768px) {
+.icon--hidable{
+  display: none;
+}
+}
+
 /* ---Buttons--- */
 .btn {
   border: 0.5px;
@@ -647,6 +656,9 @@ a {
 .block--dark h4{
   color:white;
 }
+.block--dark a:hover{
+  color: #fff;
+}
 .block--dark .icon-contaner{
   background-color: black;
 }
@@ -840,5 +852,44 @@ a {
 }
 .Showcase__Text-block h3{
   margin-top: 0;
+}
+}
+
+/* ---footer--- */
+
+.footer-section{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footer__block{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 25px;
+}
+.footer__block>ul{
+  margin-top: 0;
+}
+.footer__body{
+  display:block;
+}
+@media screen and (min-width: 768px) {
+  
+.footer-section{
+  flex-direction: row;
+}
+.footer__block{
+  display: block; 
+}
+.footer__body{
+  display:flex;
+}
+.footer-section h2{
+  font-size:1.6rem ;
+  font-weight: 600;
+}
+.footer-section p{
+  font-size: 1.8rem ;
+  font-weight: 400;
 }
 }
