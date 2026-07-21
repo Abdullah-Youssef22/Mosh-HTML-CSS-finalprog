@@ -528,16 +528,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 45px;
 }
 .callout > div {
   padding: 10px;
-} /*
+} 
 .callout > a{
   margin-top: 0;
-  padding:15px 35px;
-  font-size: 1.8rem;
+  padding:25px 50px;
+  font-size: 2rem;
   align-self: center;
-}*/
+}
 .callout--primary {
   background-color: var(--color-primary);
   color: white;
@@ -560,6 +561,8 @@ a {
 @media screen and (min-width: 768px) {
   .callout {
     flex-direction: row;
+    position: relative;
+    top:50px;
   }
   .callout__text {
     text-align: left;
@@ -858,6 +861,7 @@ a {
 /* ---footer--- */
 
 .footer-section{
+  padding-top: 50px;
   display: flex;
   flex-direction: column-reverse;
 }
