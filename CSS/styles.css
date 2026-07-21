@@ -641,8 +641,11 @@ a {
   background-color: #000;
   color: var(--color-grayText);
 }
-.block--dark h1,h2,h3,h4{
-  color:white
+.block--dark h1,
+.block--dark h2,
+.block--dark h3,
+.block--dark h4{
+  color:white;
 }
 .block--dark .icon-contaner{
   background-color: black;
