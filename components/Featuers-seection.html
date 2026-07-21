@@ -12,7 +12,7 @@
       <!-- ========== Feature 1: Easy to Use ========== -->
       <div class="block grid grid--1x2">
         <!-- Text Content -->
-        <div class="grid__column">
+        <div class="grid__column " data-aos="fade-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="icons/sprite.svg#easy"></use>
@@ -26,7 +26,7 @@
         </div>
 
         <!-- Image Content -->
-        <div class="grid__column">
+        <div class="grid__column " data-aos="fade-up">
           <picture>
             <source
               type="image/jpg"
@@ -42,23 +42,10 @@
       </div>
 
       <!-- ========== Feature 2: Fast Websites ========== -->
-      <div class="block grid grid--1x2">
-        <!-- Text Content -->
-        <div class="grid__column">
-          <span class="icon-container">
-            <svg class="icon icon--primary">
-              <use xlink:href="icons/sprite.svg#computer"></use>
-            </svg>
-          </span>
-          <h2 class="block__head">Super Fast Websites</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt.
-          </p>
-          <a class="arrow-link" href="#">Learn More →</a>
-        </div>
-
+      <div class="block grid grid--1x2 feature--revrse">
+        
         <!-- Image Content -->
-        <div class="grid__column">
+        <div class="grid__column " data-aos="fade-up">
           <picture>
             <source
               type="image/jpg"
@@ -71,12 +58,27 @@
             />
           </picture>
         </div>
+        
+        <!-- Text Content -->
+        <div class="grid__column " data-aos="fade-up">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="icons/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h2 class="block__head">Super Fast Websites</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt.
+          </p>
+          <a class="arrow-link" href="#">Learn More →</a>
+        </div>
+
       </div>
 
       <!-- ========== Feature 3: WordPress Made Easy ========== -->
       <div class="block grid grid--1x2">
         <!-- Text Content -->
-        <div class="grid__column">
+        <div class="grid__column " data-aos="fade-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="icons/sprite.svg#wordpress"></use>
@@ -90,7 +92,7 @@
         </div>
 
         <!-- Image Content -->
-        <div class="grid__column">
+        <div class="grid__column " data-aos="fade-up">
           <picture>
             <source
               type="image/jpg"
@@ -109,9 +111,28 @@
       </div>
 
       <!-- ========== Feature 4: 24/7 Support ========== -->
-      <div class="block grid grid--1x2">
+      
+      
+      <div class="block grid grid--1x2 feature--revrse">
+        
+        <!-- Image Content -->
+        <div class="grid__column " data-aos="fade-up">
+          <picture>
+            <source
+              type="image/jpg"
+              srcset="images/fast.jpg 1x, images/fast@x2.jpg 2x"
+            />
+            <img
+              class="card__img"
+              src="images/fast.jpg"
+              alt="Fast website loading"
+            />
+          </picture>
+        </div>
+      
+        
         <!-- Text Content -->
-        <div class="grid__column">
+        <div class="grid__column " data-aos="fade-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="icons/sprite.svg#clock"></use>
@@ -123,21 +144,5 @@
           </p>
           <a class="arrow-link" href="#">Learn More →</a>
         </div>
-
-        <!-- Image Content -->
-        <div class="grid__column">
-          <picture>
-            <source
-              type="image/jpg"
-              srcset="images/support.jpg 1x, images/support@x2.jpg 2x"
-            />
-            <img
-              class="card__img"
-              src="images/support.jpg"
-              alt="24/7 customer support"
-            />
-          </picture>
-        </div>
       </div>
-    </section>
-  </body>
+</section>
